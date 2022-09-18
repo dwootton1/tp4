@@ -1,0 +1,125 @@
+h1 {
+  font-family: Arial;
+  color: #ff0002;
+  padding: 20px
+}
+
+h4 {
+  font-family: Arial;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+  
+}
+
+#columns {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: block;
+}
+
+#columns div{ 
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+
+#columns div#ingredients{
+  width: 33%;
+  
+}
+
+#columns div#equipment {
+  width: 33%;
+}
+
+#columns div#directions {
+  width: 33%;
+}
+
+.copyright {
+  font-family: Arial;
+  font-size: 9px;
+  font-style: italic;
+}
+
+#ingredients {
+  display: inline;
+  background-color: violet;
+  position: relative; 
+  top: 0;
+  left 0;
+  witdh: 30vh;
+  height: 3.1 rem;
+    
+  
+}
+
+#ilist {
+  display: inline;
+  
+}
+
+
+#equipment{
+  display: inline;
+  background-color: Gray;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 3.1 rem
+  
+}
+
+#elist li {
+  display: inline
+}
+
+
+
+#directions{
+  display: inline;
+  background-color: Lightgray;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 3.1 rem
+  }
+
+#dlist li {
+  display: inline
+}
+
+#jumbotron{
+  position: relative;
+  border: 
+}
+
+@media and (orientation: portrait) {
+*{ content: border-box;
+  .row{
+    width: 33vw;
+    border: 0
+  }}
+  
+@media screen and (min-width: 575px)
+  *{ content: border-box;
+    .row{
+      width: 100%;
+      border: 0
+    }
+    
+  }
+ 
+  
+}
+
+ul,
+ol {
+  display: block;
+}
