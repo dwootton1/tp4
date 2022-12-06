@@ -1,44 +1,27 @@
-h1 {
-  font-family: Arial;
-  color: #ff0002;
-  padding: 20px
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Roboto+Slab:wght@400;700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #91855d;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
 }
 
-h4 {
-  font-family: Arial;
-  margin-bottom: 0;
-}
-
-ul, ol {
-  margin-top: 0;
-  
-}
-
-#columns {
+#header{
   position: relative;
   width: 100%;
   height: 50vh;
-  display: block;
+  background-image: url(https://www.simplyrecipes.com/thmb/BTTy85-mhJBg-1RMiTmOAwnB9aE=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__07__Copycat-Chipolte-Guacamole-Lead0002v2-04be3115c746458394e5238133614f06.jpg);
+  background-size: cover;
+  background-position: center center;
+
 }
 
-#columns div{ 
-  float: left;
-  display: inline-block;
-  position: relative;
-}
 
-#columns div#ingredients{
-  width: 33%;
-  
-}
 
-#columns div#equipment {
-  width: 33%;
-}
 
-#columns div#directions {
-  width: 33%;
-}
 
 .copyright {
   font-family: Arial;
@@ -58,11 +41,6 @@ ul, ol {
   
 }
 
-#ilist {
-  display: inline;
-  
-}
-
 
 #equipment{
   display: inline;
@@ -73,10 +51,6 @@ ul, ol {
   width: 30vh;
   height: 3.1 rem
   
-}
-
-#elist li {
-  display: inline
 }
 
 
@@ -91,35 +65,47 @@ ul, ol {
   height: 3.1 rem
   }
 
-#dlist li {
-  display: inline
-}
-
-#jumbotron{
-  position: relative;
-  border: 
-}
-
-@media and (orientation: portrait) {
-*{ content: border-box;
-  .row{
-    width: 33vw;
-    border: 0
-  }}
-  
-@media screen and (min-width: 575px)
-  *{ content: border-box;
-    .row{
-      width: 100%;
-      border: 0
-    }
-    
-  }
- 
-  
-}
-
-ul,
 ol {
-  display: block;
+  margin-top: none;
+  font-size: 20px
+  
 }
+
+#recipeColumns {
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebe4d8;
+  padding-bottom: 6vh;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.7);
+}
+
+
+#recipeColumns div#ingredients { flex-basis: 28%; }
+#recipeColumns div#equipment { flex-basis: 20%; }
+#recipeColumns div#directions { flex-basis: 50%; }
+
+#recipeColumns ul,
+#recipeColumns ol {
+  padding-left: 1.1em;
+}
+
+ul, ol {
+	display: block;
+}
+
+
+@media screen and (orientation: portrait) {
+
+  
+  #recipeColumns {
+    padding: 1vh 2vh 2vh 2vh;
+    display: block;
+  }
+  
+  
+  #recipeColumns div {
+    position: relative;
+    margin: 2.5vh 0 5vh 0;
+    font-size: 120%;
+  }
